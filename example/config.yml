@@ -1,0 +1,35 @@
+---
+
+port: 34123 # defaults to 34123
+endpoint: '/social' # defaults to /social
+
+contentful: # your contentful spaces
+  my_space_id: 'my_production_access_token'
+  # you can add multiple spaces here
+  # at least one is required
+
+twitter: # your twitter config
+  # required
+  access_token: 'your_access_token'
+  access_token_secret: 'your_access_token_secret'
+  consumer_key: 'your_consumer_key'
+  consumer_secret: 'your_consumer_secret'
+
+  template: '{{body}} {{interesting_link}} {{related.title}}'
+
+  # optional
+  media: 'my_media_field' # defaults to nil
+  possibly_sensitive: false # defaults to false
+  location: #defaults to {}
+    lat: 10.12341
+    lon: -25.123123
+
+facebook: # your facebook config
+  # required
+  access_token: 'your_access_token'
+
+  template: '{{body}} {{interesting_link}} {{related.title}}'
+
+  # optional
+  app_secret: 'your_app_secret' # defaults to nil (the access token has an app_id already)
+  post_to: 'feed_id' # defaults to 'me' which is your own timeline (can be a page's id or other user's id)

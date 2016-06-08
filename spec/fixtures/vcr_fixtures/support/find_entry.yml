@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/i5mnoggqu8vx/entries?include=3&sys.id=6be1uFO1WMcKIqQy8eMyKu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RubyContentfulGem/0.10.0
+      Authorization:
+      - Bearer 7a23ea914d9411c517540ae7bac9a7811c52225ca81d3efc8bcc39a740dde6ab
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - max-age=0
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Etag:
+      - '"5665c98d235e66ddbd5beef428332038"'
+      Server:
+      - nginx
+      X-Contentful-Request-Id:
+      - 58b-50446764
+      Content-Length:
+      - '750'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 06 Jun 2016 16:43:26 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '6549'
+      Connection:
+      - close
+      X-Served-By:
+      - cache-lax1423-LAX
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "sys": {
+            "type": "Array"
+          },
+          "total": 1,
+          "skip": 0,
+          "limit": 100,
+          "items": [
+            {
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "i5mnoggqu8vx"
+                  }
+                },
+                "id": "6be1uFO1WMcKIqQy8eMyKu",
+                "type": "Entry",
+                "createdAt": "2016-06-06T14:47:26.027Z",
+                "updatedAt": "2016-06-06T14:47:26.027Z",
+                "revision": 1,
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "testEntry"
+                  }
+                },
+                "locale": "en-US"
+              },
+              "fields": {
+                "name": "Test",
+                "body": "My Lovely Test"
+              }
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Mon, 06 Jun 2016 16:43:26 GMT
+recorded_with: VCR 3.0.3

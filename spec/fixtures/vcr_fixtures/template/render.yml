@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/i5mnoggqu8vx/entries?include=3&sys.id=6be1uFO1WMcKIqQy8eMyKu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RubyContentfulGem/0.10.0
+      Authorization:
+      - Bearer 7a23ea914d9411c517540ae7bac9a7811c52225ca81d3efc8bcc39a740dde6ab
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - max-age=0
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Etag:
+      - W/"7717cc325e784c84e6ea610e68e778ef"
+      Server:
+      - nginx
+      X-Contentful-Request-Id:
+      - 58b-51029347
+      Content-Length:
+      - '617'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 06 Jun 2016 20:43:19 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Connection:
+      - close
+      X-Served-By:
+      - cache-lax1426-LAX
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA61UW2/aMBh951cgPy/k0hAYb2gXrWtZVZVp1aY+OMkX5pI4
+        IXbaphX/fb4k4LBAp6kWIr58Nx+f870MhkPEaoZmwxcxFQteFyBWaF6WuEZi
+        b/tO2vCc41Tsu2rF1qQQC0ctUpIRLo8cvSYcMhnwlwqowx5kUZlYgSOZqrXQ
+        m0YtckNttjVdErpGMud+iOx0vWxqvlERDwxILK9DxhnNV6tNNX14krdqx3Y3
+        V/fUA2mfIAS3+nzl/lhEF+eb63oKi/qiMuLvCvtEeVmbB1EJmEM8l7ggz3ED
+        y5G/pevP/MnMC0aON/lpOlRF3OvgObMzdzZ2RsHY7ziU8EAYyalI4BmVRznl
+        QHmDyNtB+8GI2wswB8Y1DK+im+YRThXJgFrfb9rn2D0ASgik8Z6T8lEQxZly
+        WYo8JnBhHtdyf1EPL/MHSOvhoQXJ8OpteTZnDMwiVIGaMx+vwtuvX7Lb+838
+        2pnnG/bo+49HCNcApSko/++UngiN0ioGQ5M6X6uovaZ6VHVEV72WquwT2hKn
+        r6lrd+9j+hL9w+SDSZ2TiHUMdz3pL9zRMaFp3fjuaBJ0hCYKPi21XhdDbKoB
+        tgMdoXLTNbVZH50l8IRrEUi+niuOdkInRB2bEpbFl7ILI9vGEgs2avSeVKmY
+        Zrb5DHYvF22cRIEPrhdO8Bn4OPIBu0E4DeOJnyQQJXYBpfjytLY4ySC2korS
+        2oowtwoS8aoEZo1H98XqsNHGwDFJu7JtEGDkWd4lcMaT9wZ8HZgUG+WlvzVK
+        /986ui0QcXji9m+epf+iwjtR3XawHfwBi0H2kxgHAAA=
+    http_version: 
+  recorded_at: Mon, 06 Jun 2016 20:43:20 GMT
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/i5mnoggqu8vx/entries?include=3&sys.id=6be1uFO1WMcKIqQy8eMyKu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - RubyContentfulGem/0.10.0
+      Authorization:
+      - Bearer 7a23ea914d9411c517540ae7bac9a7811c52225ca81d3efc8bcc39a740dde6ab
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cache-Control:
+      - max-age=0
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Etag:
+      - W/"7717cc325e784c84e6ea610e68e778ef"
+      Server:
+      - nginx
+      X-Contentful-Request-Id:
+      - 58b-51029347
+      Content-Length:
+      - '617'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 06 Jun 2016 20:43:20 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '1'
+      Connection:
+      - close
+      X-Served-By:
+      - cache-lax1436-LAX
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA61UW2/aMBh951cgPy/k0hAYb2gXrWtZVZVp1aY+OMkX5pI4
+        IXbaphX/fb4k4LBAp6kWIr58Nx+f870MhkPEaoZmwxcxFQteFyBWaF6WuEZi
+        b/tO2vCc41Tsu2rF1qQQC0ctUpIRLo8cvSYcMhnwlwqowx5kUZlYgSOZqrXQ
+        m0YtckNttjVdErpGMud+iOx0vWxqvlERDwxILK9DxhnNV6tNNX14krdqx3Y3
+        V/fUA2mfIAS3+nzl/lhEF+eb63oKi/qiMuLvCvtEeVmbB1EJmEM8l7ggz3ED
+        y5G/pevP/MnMC0aON/lpOlRF3OvgObMzdzZ2RsHY7ziU8EAYyalI4BmVRznl
+        QHmDyNtB+8GI2wswB8Y1DK+im+YRThXJgFrfb9rn2D0ASgik8Z6T8lEQxZly
+        WYo8JnBhHtdyf1EPL/MHSOvhoQXJ8OpteTZnDMwiVIGaMx+vwtuvX7Lb+838
+        2pnnG/bo+49HCNcApSko/++UngiN0ioGQ5M6X6uovaZ6VHVEV72WquwT2hKn
+        r6lrd+9j+hL9w+SDSZ2TiHUMdz3pL9zRMaFp3fjuaBJ0hCYKPi21XhdDbKoB
+        tgMdoXLTNbVZH50l8IRrEUi+niuOdkInRB2bEpbFl7ILI9vGEgs2avSeVKmY
+        Zrb5DHYvF22cRIEPrhdO8Bn4OPIBu0E4DeOJnyQQJXYBpfjytLY4ySC2korS
+        2oowtwoS8aoEZo1H98XqsNHGwDFJu7JtEGDkWd4lcMaT9wZ8HZgUG+WlvzVK
+        /986ui0QcXji9m+epf+iwjtR3XawHfwBi0H2kxgHAAA=
+    http_version: 
+  recorded_at: Mon, 06 Jun 2016 20:43:21 GMT
+recorded_with: VCR 3.0.3

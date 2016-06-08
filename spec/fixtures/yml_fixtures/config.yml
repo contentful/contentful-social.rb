@@ -1,0 +1,16 @@
+---
+
+endpoint: '/social'
+port: 34123
+contentful:
+  i5mnoggqu8vx: '7a23ea914d9411c517540ae7bac9a7811c52225ca81d3efc8bcc39a740dde6ab'
+twitter:
+  template: '{{name}}: "{{body}}"'
+  access_token: 'foo'
+  access_token_secret: 'foo_secret'
+  consumer_key: 'bar'
+  consumer_secret: 'bar_secret'
+facebook:
+  template: '{{name}}: "{{body}}"'
+  access_token: 'foo'
+  app_secret: 'foo_secret'

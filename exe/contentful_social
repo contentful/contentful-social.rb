@@ -1,0 +1,35 @@
+#!/usr/bin/env ruby
+
+require 'contentful/social'
+
+STDOUT.sync = true
+
+trap('TERM') do
+  puts "Graceful shutdown"
+  exit
+end
+
+
+def usage
+  puts "Usage: contentful_social <configuration_file>"
+end
+
+if ARGV.empty?
+  usage
+  exit(1)
+end
+
+if ['-h', '-H', '--help'].include?(ARGV.first)
+  usage
+  exit(0)
+end
+
+if File.file?(ARGV.first)
+  Contentful::Social.start(
+    Contentful::Social::Config.load(ARGV.first)
+  )
+else
+  puts "File provided not found!\n"
+  usage
+  exit(1)
+end
