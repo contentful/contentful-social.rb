@@ -18,9 +18,9 @@ module Contentful
 
         ::Contentful::Social::TwitterHandler.new(config.twitter, contentful_client, webhook).tweet
 
-        puts 'Successfully published on Twitter'
+        logger.debug 'Successfully published on Twitter'
       rescue StandardError => e
-        puts "Error while trying to publish to Twitter: #{e}"
+        logger.error "Error while trying to publish to Twitter: #{e}"
       end
 
       def publish_to_facebook(webhook)
@@ -28,9 +28,9 @@ module Contentful
 
         ::Contentful::Social::FacebookHandler.new(config.facebook, contentful_client, webhook).post
 
-        puts 'Successfully published on Facebook'
+        logger.debug 'Successfully published on Facebook'
       rescue StandardError => e
-        puts "Error while trying to publish to Facebook: #{e}"
+        logger.error "Error while trying to publish to Facebook: #{e}"
       end
 
       def config
