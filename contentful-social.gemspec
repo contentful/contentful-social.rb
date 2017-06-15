@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'contentful-webhook-listener', '~> 0.2'
-  spec.add_runtime_dependency 'contentful', '~> 0.9'
+  spec.add_runtime_dependency 'contentful', '~> 2.1'
   spec.add_runtime_dependency 'hashie', '~> 3.4'
 
   spec.add_runtime_dependency 'twitter', '~> 5.0'

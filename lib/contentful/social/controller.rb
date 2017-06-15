@@ -43,7 +43,9 @@ module Contentful
             access_token: config.contentful[webhook.space_id],
             space: webhook.space_id,
             dynamic_entries: :auto,
-            raise_errors: true
+            raise_errors: true,
+            application_name: 'contentful-social',
+            application_version: Contentful::Social::VERSION
           )
         else
           fail "Space '#{webhook.space_id}' not configured"

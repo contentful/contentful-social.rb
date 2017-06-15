@@ -33,7 +33,22 @@ describe Contentful::Social::Controller do
   end
 
   describe 'controller methods' do
-    describe ':publish' do
+    describe '#contentful_client' do
+      it 'contains proper application headers' do
+        headers['X-Contentful-Topic'] = 'ContentfulManagement.Asset.publish'
+        webhook = Contentful::Webhook::Listener::WebhookFactory.new(RequestDummy.new(headers, body)).create
+        subject.instance_variable_set(:@webhook, webhook)
+
+        vcr('client') {
+          expect(subject.contentful_client.app_info).to eq(
+            name: 'contentful-social',
+            version: Contentful::Social::VERSION
+          )
+        }
+      end
+    end
+
+    describe '#publish' do
       describe 'does nothing' do
         it 'when webhook is asset' do
           headers['X-Contentful-Topic'] = 'ContentfulManagement.Asset.publish'
